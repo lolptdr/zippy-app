@@ -1,0 +1,8 @@
+<div class="zippy">
+  <div class="zippy__title" (click)="toggle()">
+    {{ visible ? '&#9660;' : '  &#9654;' }} {{title}}
+  </div>
+  <div class="zippy__content" [hidden]="!visible">
+    <ng-content></ng-content>
+  </div>
+</div>

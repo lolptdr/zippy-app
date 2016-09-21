@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // moduleId: module.id,
+  selector: 'zippy-app',
+  template: `
+    <my-zippy title="Details">
+     <p>Here's some detailed content.</p>
+    </my-zippy>`
 })
-export class AppComponent {
-  title = 'app works!';
+export class ZippyAppComponent {
+
 }
